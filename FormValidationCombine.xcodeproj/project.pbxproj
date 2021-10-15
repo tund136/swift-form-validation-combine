@@ -14,6 +14,7 @@
 		AD22E86627192DC00086A92C /* TextFieldFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22E86527192DC00086A92C /* TextFieldFormView.swift */; };
 		AD22E86827192F620086A92C /* DateFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22E86727192F620086A92C /* DateFormView.swift */; };
 		AD22E86A271930780086A92C /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22E869271930780086A92C /* ButtonFormView.swift */; };
+		AD22E86E2719337B0086A92C /* FormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22E86D2719337B0086A92C /* FormItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		AD22E86527192DC00086A92C /* TextFieldFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldFormView.swift; sourceTree = "<group>"; };
 		AD22E86727192F620086A92C /* DateFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormView.swift; sourceTree = "<group>"; };
 		AD22E869271930780086A92C /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
+		AD22E86D2719337B0086A92C /* FormItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,7 @@
 		AD22E85527192D2D0086A92C /* FormValidationCombine */ = {
 			isa = PBXGroup;
 			children = (
-				AD22E86427192DB40086A92C /* Views */,
+				AD22E86B271933620086A92C /* Form */,
 				AD22E85627192D2D0086A92C /* FormValidationCombineApp.swift */,
 				AD22E85827192D2D0086A92C /* ContentView.swift */,
 				AD22E85A27192D300086A92C /* Assets.xcassets */,
@@ -82,6 +84,23 @@
 				AD22E869271930780086A92C /* ButtonFormView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		AD22E86B271933620086A92C /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				AD22E86C2719336A0086A92C /* Model */,
+				AD22E86427192DB40086A92C /* Views */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		AD22E86C2719336A0086A92C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD22E86D2719337B0086A92C /* FormItem.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +177,7 @@
 				AD22E86A271930780086A92C /* ButtonFormView.swift in Sources */,
 				AD22E86627192DC00086A92C /* TextFieldFormView.swift in Sources */,
 				AD22E86827192F620086A92C /* DateFormView.swift in Sources */,
+				AD22E86E2719337B0086A92C /* FormItem.swift in Sources */,
 				AD22E85727192D2D0086A92C /* FormValidationCombineApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
