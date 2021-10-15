@@ -13,6 +13,7 @@
 		AD22E85E27192D300086A92C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD22E85D27192D300086A92C /* Preview Assets.xcassets */; };
 		AD22E86627192DC00086A92C /* TextFieldFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22E86527192DC00086A92C /* TextFieldFormView.swift */; };
 		AD22E86827192F620086A92C /* DateFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22E86727192F620086A92C /* DateFormView.swift */; };
+		AD22E86A271930780086A92C /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22E869271930780086A92C /* ButtonFormView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		AD22E85D27192D300086A92C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AD22E86527192DC00086A92C /* TextFieldFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldFormView.swift; sourceTree = "<group>"; };
 		AD22E86727192F620086A92C /* DateFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormView.swift; sourceTree = "<group>"; };
+		AD22E869271930780086A92C /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				AD22E86527192DC00086A92C /* TextFieldFormView.swift */,
 				AD22E86727192F620086A92C /* DateFormView.swift */,
+				AD22E869271930780086A92C /* ButtonFormView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD22E85927192D2D0086A92C /* ContentView.swift in Sources */,
+				AD22E86A271930780086A92C /* ButtonFormView.swift in Sources */,
 				AD22E86627192DC00086A92C /* TextFieldFormView.swift in Sources */,
 				AD22E86827192F620086A92C /* DateFormView.swift in Sources */,
 				AD22E85727192D2D0086A92C /* FormValidationCombineApp.swift in Sources */,
