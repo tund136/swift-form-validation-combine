@@ -13,6 +13,7 @@ import SwiftUI
 protocol FormItem {
     var id: UUID { get }
     var formId: FormField { get }
+    var validations: [ValidationManager] { get }
     var val: Any? { get }
 }
 
@@ -27,14 +28,18 @@ enum FormField {
 
 // MARK: Base Form Compponent
 class FormComponent: FormItem, Identifiable {
+
     let id = UUID()
     
     let formId: FormField
     
+    let validations: [ValidationManager]
+    
     var val: Any?
     
-    init(_ id: FormField) {
+    init(_ id: FormField, validations: [ValidationManager] = []) {
         self.formId = id
+        self.validations = validations
     }
 }
 
@@ -43,19 +48,19 @@ final class TextFormComponent: FormComponent {
     let placeholder: String
     let keyboardType: UIKeyboardType
     
-    init(id: FormField, placeholder: String, keyboardType: UIKeyboardType = .default) {
+    init(id: FormField, placeholder: String, keyboardType: UIKeyboardType = .default, validations: [ValidationManager] = []) {
         self.placeholder = placeholder
         self.keyboardType = keyboardType
-        super.init(id)
+        super.init(id, validations: validations)
     }
 }
 
 // MARK: Date Component
 final class DateFormComponent: FormComponent {
     let mode: DatePickerComponents
-    init(id: FormField, mode: DatePickerComponents) {
+    init(id: FormField, mode: DatePickerComponents, validations: [ValidationManager] = []) {
         self.mode = mode
-        super.init(id)
+        super.init(id, validations: validations)
     }
 }
 
