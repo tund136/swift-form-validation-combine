@@ -15,6 +15,7 @@
 		AD22E86827192F620086A92C /* DateFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22E86727192F620086A92C /* DateFormView.swift */; };
 		AD22E86A271930780086A92C /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22E869271930780086A92C /* ButtonFormView.swift */; };
 		AD22E86E2719337B0086A92C /* FormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22E86D2719337B0086A92C /* FormItem.swift */; };
+		AD22E871271936F90086A92C /* FormContentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22E870271936F90086A92C /* FormContentBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		AD22E86727192F620086A92C /* DateFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormView.swift; sourceTree = "<group>"; };
 		AD22E869271930780086A92C /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
 		AD22E86D2719337B0086A92C /* FormItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormItem.swift; sourceTree = "<group>"; };
+		AD22E870271936F90086A92C /* FormContentBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormContentBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		AD22E86B271933620086A92C /* Form */ = {
 			isa = PBXGroup;
 			children = (
+				AD22E86F271936EC0086A92C /* Builder */,
 				AD22E86C2719336A0086A92C /* Model */,
 				AD22E86427192DB40086A92C /* Views */,
 			);
@@ -101,6 +104,14 @@
 				AD22E86D2719337B0086A92C /* FormItem.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		AD22E86F271936EC0086A92C /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				AD22E870271936F90086A92C /* FormContentBuilder.swift */,
+			);
+			path = Builder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +188,7 @@
 				AD22E86A271930780086A92C /* ButtonFormView.swift in Sources */,
 				AD22E86627192DC00086A92C /* TextFieldFormView.swift in Sources */,
 				AD22E86827192F620086A92C /* DateFormView.swift in Sources */,
+				AD22E871271936F90086A92C /* FormContentBuilder.swift in Sources */,
 				AD22E86E2719337B0086A92C /* FormItem.swift in Sources */,
 				AD22E85727192D2D0086A92C /* FormValidationCombineApp.swift in Sources */,
 			);
