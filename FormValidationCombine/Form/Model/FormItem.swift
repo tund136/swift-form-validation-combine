@@ -24,7 +24,7 @@ enum FormField {
     case submit
 }
 
-// Base Form Compponent
+// MARK: Base Form Compponent
 class FormComponent: FormItem, Identifiable {
     let id = UUID()
     
@@ -37,7 +37,7 @@ class FormComponent: FormItem, Identifiable {
     }
 }
 
-// Text Component
+// MARK: Text Component
 final class TextFormComponent: FormComponent {
     let placeholder: String
     let keyboardType: UIKeyboardType
@@ -49,7 +49,7 @@ final class TextFormComponent: FormComponent {
     }
 }
 
-// Date Component
+// MARK: Date Component
 final class DateFormComponent: FormComponent {
     let mode: UIDatePicker.Mode
     init(id: FormField, mode: UIDatePicker.Mode) {
@@ -58,7 +58,7 @@ final class DateFormComponent: FormComponent {
     }
 }
 
-// Button Component
+// MARK: Button Component
 final class ButtonFormComponent: FormComponent {
     let title: String
     
