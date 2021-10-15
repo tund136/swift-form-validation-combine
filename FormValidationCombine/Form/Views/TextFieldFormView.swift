@@ -8,24 +8,34 @@
 import SwiftUI
 
 struct TextFieldFormView: View {
+    @State private var text = ""
+    @State private var error: ValidationError?
+    
     let component: TextFormComponent
     
     var body: some View {
         VStack(alignment: .leading) {
-            TextField(component.placeholder, text: .constant(""))
+            TextField(component.placeholder, text: $text)
                 .frame(maxWidth: .infinity, minHeight: 44)
                 .padding(.leading)
                 .keyboardType(component.keyboardType)
                 .background(
                     RoundedRectangle(cornerRadius: 10)
-                        .stroke(Color.gray.opacity(0.25))
+                        .strokeBorder(error == nil ? Color.gray.opacity(0.25) : Color.red)
                 )
             
-            Text("Error here")
+            Text(error?.errorDescription ?? "")
                 .font(.subheadline)
                 .fontWeight(.semibold)
                 .foregroundColor(Color.red)
         }
+        .onChange(of: text, perform: { value in
+            // Perform validation
+            error = component
+                .validations
+                .compactMap { $0.validate(text) }
+                .first
+        })
     }
 }
 
