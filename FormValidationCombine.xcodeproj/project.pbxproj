@@ -20,6 +20,7 @@
 		AD22E8782719554A0086A92C /* RegexFormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22E8772719554A0086A92C /* RegexFormItem.swift */; };
 		AD22E87B271955980086A92C /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22E87A271955980086A92C /* ValidationError.swift */; };
 		AD22E87E271956B60086A92C /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22E87D271956B60086A92C /* ValidationManager.swift */; };
+		AD22E881271980740086A92C /* FormState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22E880271980740086A92C /* FormState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		AD22E8772719554A0086A92C /* RegexFormItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexFormItem.swift; sourceTree = "<group>"; };
 		AD22E87A271955980086A92C /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
 		AD22E87D271956B60086A92C /* ValidationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
+		AD22E880271980740086A92C /* FormState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		AD22E86B271933620086A92C /* Form */ = {
 			isa = PBXGroup;
 			children = (
+				AD22E87F271980610086A92C /* Event */,
 				AD22E87227193DE50086A92C /* Regex */,
 				AD22E86F271936EC0086A92C /* Builder */,
 				AD22E86C2719336A0086A92C /* Model */,
@@ -164,6 +167,14 @@
 				AD22E87D271956B60086A92C /* ValidationManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		AD22E87F271980610086A92C /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				AD22E880271980740086A92C /* FormState.swift */,
+			);
+			path = Event;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +254,7 @@
 				AD22E87527193E190086A92C /* RegexPatterns.swift in Sources */,
 				AD22E86627192DC00086A92C /* TextFieldFormView.swift in Sources */,
 				AD22E86827192F620086A92C /* DateFormView.swift in Sources */,
+				AD22E881271980740086A92C /* FormState.swift in Sources */,
 				AD22E871271936F90086A92C /* FormContentBuilder.swift in Sources */,
 				AD22E8782719554A0086A92C /* RegexFormItem.swift in Sources */,
 				AD22E86E2719337B0086A92C /* FormItem.swift in Sources */,

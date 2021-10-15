@@ -26,7 +26,7 @@ struct ContentView: View {
                             switch id {
                             case .submit:
                                 // Validate
-                                break
+                                contentBuilder.validate()
                             default:
                                 break
                             }
@@ -39,6 +39,16 @@ struct ContentView: View {
             .padding(.top, 100)
         }
         .padding(.horizontal)
+        .onChange(of: contentBuilder.state, perform: { state in
+            switch state {
+            case .valid(let user):
+                print("Form is valid with user: \(user)")
+            case .fail(let error):
+                print("Failed: \(error.errorDescription)")
+            case .none:
+                break
+            }
+        })
     }
 }
 
