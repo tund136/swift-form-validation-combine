@@ -20,6 +20,7 @@ struct ContentView: View {
                             .environmentObject(contentBuilder)
                     case is DateFormComponent:
                         DateFormView(component: component as! DateFormComponent)
+                            .environmentObject(contentBuilder)
                     case is ButtonFormComponent:
                         ButtonFormView(component: component as! ButtonFormComponent)
                     default:
