@@ -10,6 +10,7 @@ import Combine
 
 protocol FormContentBuilder {
     var content: [FormComponent] { get }
+    func update(_ val: Any, in component: FormComponent)
 }
 
 final class FormContentBuilderImpl: FormContentBuilder, ObservableObject {
@@ -68,4 +69,13 @@ final class FormContentBuilderImpl: FormContentBuilder, ObservableObject {
         ),
         ButtonFormComponent(id: .submit, title: "Confirm")
     ]
+    
+    func update(_ val: Any, in component: FormComponent) {
+        guard let index = content.firstIndex(where: { $0.id == component.id })
+        else {
+            return
+        }
+        
+        content[index].val = val
+    }
 }

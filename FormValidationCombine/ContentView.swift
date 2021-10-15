@@ -17,6 +17,7 @@ struct ContentView: View {
                     switch component {
                     case is TextFormComponent:
                         TextFieldFormView(component: component as! TextFormComponent)
+                            .environmentObject(contentBuilder)
                     case is DateFormComponent:
                         DateFormView(component: component as! DateFormComponent)
                     case is ButtonFormComponent:

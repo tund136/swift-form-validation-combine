@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct TextFieldFormView: View {
+    
+    @EnvironmentObject var contentBuilder: FormContentBuilderImpl
     @State private var text = ""
     @State private var error: ValidationError?
     
@@ -30,6 +32,8 @@ struct TextFieldFormView: View {
                 .foregroundColor(Color.red)
         }
         .onChange(of: text, perform: { value in
+            contentBuilder.update(text, in: component)
+            
             // Perform validation
             error = component
                 .validations
@@ -42,6 +46,7 @@ struct TextFieldFormView: View {
 struct TextFieldFormView_Previews: PreviewProvider {
     static var previews: some View {
         TextFieldFormView(component: .init(id: .firstName, placeholder: ""))
+            .environmentObject(FormContentBuilderImpl())
             .padding(.horizontal)
             .previewLayout(.sizeThatFits)
             .previewDisplayName("Text Field")
