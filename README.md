@@ -5,3 +5,6 @@
 
 ### Breaking Down the Validators
 ![Validator](/validator.png)
+
+### Demo
+![App UI](/intro.gif)
