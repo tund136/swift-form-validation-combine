@@ -17,6 +17,9 @@
 		AD22E86E2719337B0086A92C /* FormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22E86D2719337B0086A92C /* FormItem.swift */; };
 		AD22E871271936F90086A92C /* FormContentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22E870271936F90086A92C /* FormContentBuilder.swift */; };
 		AD22E87527193E190086A92C /* RegexPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22E87427193E190086A92C /* RegexPatterns.swift */; };
+		AD22E8782719554A0086A92C /* RegexFormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22E8772719554A0086A92C /* RegexFormItem.swift */; };
+		AD22E87B271955980086A92C /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22E87A271955980086A92C /* ValidationError.swift */; };
+		AD22E87E271956B60086A92C /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22E87D271956B60086A92C /* ValidationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		AD22E86D2719337B0086A92C /* FormItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormItem.swift; sourceTree = "<group>"; };
 		AD22E870271936F90086A92C /* FormContentBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormContentBuilder.swift; sourceTree = "<group>"; };
 		AD22E87427193E190086A92C /* RegexPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexPatterns.swift; sourceTree = "<group>"; };
+		AD22E8772719554A0086A92C /* RegexFormItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexFormItem.swift; sourceTree = "<group>"; };
+		AD22E87A271955980086A92C /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
+		AD22E87D271956B60086A92C /* ValidationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,9 @@
 		AD22E87227193DE50086A92C /* Regex */ = {
 			isa = PBXGroup;
 			children = (
+				AD22E87C271956A00086A92C /* Manager */,
+				AD22E879271955850086A92C /* Error */,
+				AD22E8762719553F0086A92C /* Model */,
 				AD22E87327193E020086A92C /* Patterns */,
 			);
 			path = Regex;
@@ -131,6 +140,30 @@
 				AD22E87427193E190086A92C /* RegexPatterns.swift */,
 			);
 			path = Patterns;
+			sourceTree = "<group>";
+		};
+		AD22E8762719553F0086A92C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD22E8772719554A0086A92C /* RegexFormItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD22E879271955850086A92C /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				AD22E87A271955980086A92C /* ValidationError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		AD22E87C271956A00086A92C /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				AD22E87D271956B60086A92C /* ValidationManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,12 +236,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD22E87E271956B60086A92C /* ValidationManager.swift in Sources */,
 				AD22E85927192D2D0086A92C /* ContentView.swift in Sources */,
+				AD22E87B271955980086A92C /* ValidationError.swift in Sources */,
 				AD22E86A271930780086A92C /* ButtonFormView.swift in Sources */,
 				AD22E87527193E190086A92C /* RegexPatterns.swift in Sources */,
 				AD22E86627192DC00086A92C /* TextFieldFormView.swift in Sources */,
 				AD22E86827192F620086A92C /* DateFormView.swift in Sources */,
 				AD22E871271936F90086A92C /* FormContentBuilder.swift in Sources */,
+				AD22E8782719554A0086A92C /* RegexFormItem.swift in Sources */,
 				AD22E86E2719337B0086A92C /* FormItem.swift in Sources */,
 				AD22E85727192D2D0086A92C /* FormValidationCombineApp.swift in Sources */,
 			);
